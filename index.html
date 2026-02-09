@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ECE Study Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background-color: #2563eb;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 8px 15px;
+      background-color: #1e40af;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #1e3a8a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ECE Study Portal</h1>
+  <p>Learn • Practice • Succeed</p>
+</header>
+
+<nav>
+  <a href="#signals">Signals & Systems</a>
+  <a href="#networks">Network Theory</a>
+  <a href="#digital">Digital Electronics</a>
+  <a href="#practice">Practice</a>
+</nav>
+
+<section id="signals">
+  <div class="card">
+    <h2>Signals & Systems – Study Channels</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@examdostbyankitgoyal" target="_blank">Exam Dost – Signals & Systems</a></li>
+      <li><a href="https://www.youtube.com/@engineerskipathshala1111" target="_blank">Gate Academy Plus</a></li>
+      <li><a href="https://youtube.com/playlist?list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_&si=GD-R6x-QI7v_uc8V" target="_blank">RK Classes</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="networks">
+  <div class="card">
+    <h2>Network Theory – Study Channels</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@nptelhrd" target="_blank">NPTEL – Network Theory</a></li>
+      <li><a href="https://www.youtube.com/@GateSmashers" target="_blank">Gate Smashers</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="digital">
+  <div class="card">
+    <h2>Digital Electronics – Study Channels</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@EasyEngineeringClasses" target="_blank">Easy Engineering</a></li>
+      <li><a href="https://www.youtube.com/@GateSmashers" target="_blank">Gate Smashers</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="papers">
+  <div class="card">
+    <h2>Previous Year Question Papers (ECE)</h2>
+
+    <h3>GATE ECE</h3>
+    <ul>
+      <li><a href="#" target="_blank">GATE ECE 2024 Question Paper</a></li>
+      <li><a href="#" target="_blank">GATE ECE 2023 Question Paper</a></li>
+      <li><a href="#" target="_blank">GATE ECE 2022 Question Paper</a></li>
+    </ul>
+
+    <h3>University Exams</h3>
+    <ul>
+      <li><a href="#" target="_blank">Signals & Systems – Previous Papers</a></li>
+      <li><a href="#" target="_blank">Network Theory – Previous Papers</a></li>
+      <li><a href="#" target="_blank">Digital Electronics – Previous Papers</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="card">
+    <h2>Practice Questions</h2>
+
+    <p><b>Q1.</b> What is the condition for system stability?</p>
+    <button onclick="toggleAnswer('a1')">Show Answer</button>
+    <p id="a1" style="display:none;">All poles of the system must lie in the left half of the s-plane.</p>
+
+    <hr>
+
+    <p><b>Q2.</b> Bandwidth of AM signal is?</p>
+    <button onclick="toggleAnswer('a2')">Show Answer</button>
+    <p id="a2" style="display:none;">Bandwidth = 2 × highest modulating frequency</p>
+
+  </div>
+</section>
+
+<footer>
+  <p>ECE Department | Student Learning Portal</p>
+</footer>
+
+<script>
+  function toggleAnswer(id) {
+    var ans = document.getElementById(id);
+    ans.style.display = (ans.style.display === "none") ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>
